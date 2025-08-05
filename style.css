@@ -1,0 +1,173 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+}
+
+.cont {
+  width: 80vw;
+  height: 80vh;
+  border: 3px solid; 
+  overflow: auto;
+}
+
+.sec1{
+  display: flex;
+}
+
+
+.box{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.box img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+
+}
+.box1{
+  flex-grow: 5;
+  background-image: url('https://i.postimg.cc/GpR765pt/Background-decor-2x.png');
+}
+
+.box2{
+  background: #c1b6f8;
+}
+.box3{
+  background: #edadd2;
+}
+.box4{
+  background: #c1b6f8;
+  display: none;
+}
+.item2{
+  background: #9cc4f8;
+}
+.item3{
+  background: #f8d8b1;
+}
+.item4{
+  background: #86e7d4;
+}
+
+.sec2{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+#top-para{
+  margin-left:10px ;
+  color: blue;
+}
+
+h1, p{
+  font-family: sans-serif;
+  font-family: 1.2rem;
+  margin-left:10px ;
+}
+
+.box1-d{
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sec1 {
+    flex-wrap: wrap;
+  }
+  .sec2 {
+    flex-wrap: wrap;
+  }
+  .box1{
+    flex-basis: 100vw;
+  }
+  .box4{
+    display: block;
+    flex-grow: 2;
+  }
+  .item4{
+    display: none;
+  }
+
+  .cont {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  html, body{
+    margin: 200px;
+
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+      html, body {
+        align-items: flex-start;
+        padding: 20px 0;
+      }
+      
+      .cont {
+        width: 95vw;
+        height: auto;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .sec1, .sec2 {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .sec2 {
+        order: 1;
+      }
+      
+      .box1-d {
+        order: 2;
+      }
+      
+      .box {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+      }
+      
+      .box img {
+        width: 100%;
+        height: 250px;
+      }
+      
+      .box1 {
+        flex-grow: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: -247px;
+
+      }
+      
+      .box4 {
+        display: block;
+      }
+      
+      .item4 {
+        display: none;
+      }
+      
+      h1, p {
+        margin-left: 0;
+        text-align: center;
+      }
+      
+      #top-para {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
